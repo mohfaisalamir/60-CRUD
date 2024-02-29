@@ -1,0 +1,11 @@
+fiersabesari_2012_1,2012,fiersa besari,media kita,jejak langkah
+PramoedyaAnantatoer_2001_1,2001,Pramoedya Anantatoer,Gramedia,Bumi Manusia
+purcell_2009_1,2009,purcell,wiley,calculus
+faqihza_2015_1,2015,faqihza,elexmedia,belajar C++
+faqihza_2019_2,2019,faqihza,gramedia,belajar python
+faqihza_2019_3,2019,faqihza,gramedia,belajar jyava
+faqihza_2020_1,2020,faqihza,kelas terbuka,membagi waktu belajar
+faqihza_2019_4,2019,faqihza,gramedia,belajar berlari
+TanMalaka_1948_1,1948,Tan Malaka,SUARA RAKYAT,Aksi Masa
+mohfaisalamir_2033_1,2033,moh faisal amir,elsevier,teori kuantum
+FachriHamzah_2024_1,2024,Fachri Hamzah,gelora press,Gelora Rakyat Indonesia
