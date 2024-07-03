@@ -1,0 +1,43 @@
+nama data base = sinar_sukses_mandiri_purchase
+-- Tabel m_user
+CREATE TABLE IF NOT EXISTS m_user (
+    id_user SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
+    address VARCHAR(255)
+);
+
+-- Tabel m_user_credential
+CREATE TABLE IF NOT EXISTS m_user_credential (
+    id_user_credential SERIAL PRIMARY KEY,
+    uuid VARCHAR(36) NOT NULL UNIQUE,
+    id_user INTEGER REFERENCES m_user(id_user)
+);
+
+-- Tabel t_purchase_order
+CREATE TABLE IF NOT EXISTS t_purchase_order (
+    id_purchase_order SERIAL PRIMARY KEY,
+    number VARCHAR(50) NOT NULL UNIQUE,
+    date DATE NOT NULL,
+    total_amount NUMERIC(10,2) NOT NULL,
+    id_user INTEGER REFERENCES m_user(id_user)
+);
+
+-- Tabel t_delivery_order
+CREATE TABLE IF NOT EXISTS t_delivery_order (
+    id_delivery_order SERIAL PRIMARY KEY,
+    id_purchase_order INTEGER REFERENCES t_purchase_order(id_purchase_order),
+    delivery_date DATE NOT NULL,
+    status VARCHAR(50) NOT NULL
+);
+
+-- Tabel t_order_item
+CREATE TABLE IF NOT EXISTS t_order_item (
+    id_order_item SERIAL PRIMARY KEY,
+    id_purchase_order INTEGER REFERENCES t_purchase_order(id_purchase_order),
+    item_name VARCHAR(100) NOT NULL,
+    quantity INTEGER NOT NULL,
+    unit_price NUMERIC(10,2) NOT NULL
+);

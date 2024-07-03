@@ -1,0 +1,43 @@
+Langkah-langkah untuk Mengaitkan Endpoint API ke Postman:
+
+    Jalankan Aplikasi Spring Boot:
+    Pastikan aplikasi Spring Boot Anda sudah berjalan di lingkungan pengembangan Anda.
+
+    Buka Postman:
+    Buka aplikasi Postman di komputer Anda. Pastikan Postman sudah terinstal. Jika belum, Anda dapat mengunduhnya dari Postman website.
+
+    Buat Collection Baru:
+        Pilih tab "Collections" di sidebar kiri Postman.
+        Klik tombol "New Collection".
+        Beri nama koleksi Anda, misalnya "My Spring Boot App".
+
+    Tambahkan Request Baru:
+        Klik pada koleksi yang baru Anda buat.
+        Klik tombol "Add a request".
+        Beri nama request Anda, misalnya "Get All Users".
+
+    Atur Request:
+        Pilih metode HTTP yang sesuai (GET, POST, PUT, DELETE, dll.).
+        Masukkan URL endpoint API Anda. Misalnya: http://localhost:8080/api/users (sesuaikan dengan port dan path endpoint Anda).
+        Tambahkan header, body, atau parameter yang diperlukan untuk request Anda sesuai dengan kebutuhan aplikasi Anda.
+
+    Kirim Request:
+        Klik tombol "Send" untuk mengirimkan request ke endpoint API yang telah Anda atur.
+
+    Lihat Hasil Response:
+        Postman akan menampilkan hasil respons dari server Spring Boot Anda.
+        Anda dapat melihat status code, header, body, dan informasi lainnya terkait respons dari endpoint API.
+
+    Simpan Request:
+        Jika request Anda berhasil, klik tombol "Save" untuk menyimpan request ini ke dalam koleksi Anda.
+
+    Ulangi untuk Endpoint Lain (Opsional):
+        Ulangi langkah-langkah di atas untuk setiap endpoint API yang Anda ingin uji atau atur di Postman.
+
+Catatan Tambahan:
+
+    Pastikan aplikasi Spring Boot Anda berjalan di port yang sesuai (defaultnya adalah 8080 jika tidak diubah).
+    Pastikan endpoint API Anda memiliki autentikasi atau izin yang diperlukan jika diperlukan.
+    Anda dapat menggunakan fitur Postman seperti variables, environments, dan scripting untuk mengelola dan mengotomatisasi pengujian API Anda.
+
+Dengan mengikuti langkah-langkah di atas, Anda akan dapat menghubungkan dan menguji endpoint API dari aplikasi Spring Boot Anda menggunakan Postman dengan mudah.
